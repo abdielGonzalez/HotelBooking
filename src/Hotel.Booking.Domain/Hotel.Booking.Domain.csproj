@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Address.cs" />
+    <Compile Remove="Entities\CCDelivery.cs" />
+    <Compile Remove="Entities\CreditCard.cs" />
+    <Compile Remove="Entities\Customer.cs" />
+    <Compile Remove="Entities\CustomerContact.cs" />
+    <Compile Remove="Entities\CustomerContactCCPreference.cs" />
+    <Compile Remove="Entities\CustomerMT.cs" />
+    <Compile Remove="Entities\IdentityDocument.cs" />
+    <Compile Remove="Entities\LegalCustomer.cs" />
+    <Compile Remove="Entities\ManAttributesValues.cs" />
+    <Compile Remove="Entities\ManRequest.cs" />
+    <Compile Remove="Entities\NaturalCustomer.cs" />
+    <Compile Remove="Entities\NaturalCustomerLegalCustomer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="ValueObjects\" />
+  </ItemGroup>
+
+</Project>
